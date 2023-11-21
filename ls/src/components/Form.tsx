@@ -16,7 +16,7 @@ const Form = () => {
       <Box
         sx={{
           position: 'relative',
-          width: 600, // Ajustei a largura para acomodar os novos campos
+          width: 600, 
           height: 400,
           bgcolor: 'background.paper',
           p: 4,
