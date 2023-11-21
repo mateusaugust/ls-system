@@ -10,11 +10,18 @@ function App() {
 
   return (
    <>
-
-    {//<LateralMenu setOpen={setOpen}/>
-    //<ConfirmGoOut setOpen={setOpen} open={open}/>
+    {
+      //Para Habilitar a Tela de Registro tire as barras de comentario do componente Register
+      //<Register/>
     }
-    
+
+
+    {
+      //Menu lateral
+      //<LateralMenu setOpen={setOpen}/>
+      //<ConfirmGoOut setOpen={setOpen} open={open}/>
+    }
+
    </>
   );
 }
