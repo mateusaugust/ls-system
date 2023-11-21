@@ -55,6 +55,10 @@ const LateralMenu = ({setOpen}:TlateralMenu) => {
           Sair
         </Button>
       </Box>
+
+      {
+        //Colaborador: Mateus Augusto da Silva
+      }
     </Box>
   )
 }
