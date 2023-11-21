@@ -2,6 +2,9 @@ import { useState } from "react";
 import ConfirmGoOut from "./Modals/ConfirmGoOut";
 import LateralMenu from "./components/LateralMenu";
 import Register from "./components/Register";
+import Form from "./components/Form"  ;
+import Lista from "./components/Lista";
+
 
 function App() {
   //Se for mostrar a tela de Registro, comente todas linhas que não seja referente a ela.
@@ -19,11 +22,20 @@ function App() {
       //<Register/>
     }
 
-
     {
       //Menu lateral
       //<LateralMenu setOpen={setOpen}/>
       //<ConfirmGoOut setOpen={setOpen} open={open}/>
+    }
+
+    {
+      //Form 
+      //<Form/>
+    }
+
+    {
+      //List
+      //<Lista/>
     }
 
     {
