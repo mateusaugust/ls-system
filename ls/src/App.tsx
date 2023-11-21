@@ -4,13 +4,17 @@ import LateralMenu from "./components/LateralMenu";
 import Register from "./components/Register";
 
 function App() {
-
-  const [open, setOpen] = useState(false);
+  //Para habilitar o menu lateral tire os comentarios da const abaixo,
+  //dos componentes LateralMenu e ConfirmGoOut
+  //const [open, setOpen] = useState(false);
 
   return (
    <>
-    <LateralMenu setOpen={setOpen}/>
-    <ConfirmGoOut setOpen={setOpen} open={open}/>
+
+    {//<LateralMenu setOpen={setOpen}/>
+    //<ConfirmGoOut setOpen={setOpen} open={open}/>
+    }
+    
    </>
   );
 }
