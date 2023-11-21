@@ -77,6 +77,10 @@ const Register = () => {
          </Box>
         </Modal>
       </Box>
+
+      {
+        //Colaborador: Mateus Augusto da Silva
+      }
     </Box>
   )
 }
