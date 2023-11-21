@@ -28,6 +28,7 @@ function App() {
 
     {
       //Colaborador: Mateus Augusto da Silva
+      //:)
     }
    </>
   );
