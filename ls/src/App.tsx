@@ -9,8 +9,7 @@ import Workspace from "./Workspace";
 
 
 function App() {
- 
-  const [typeButtons, setTypeButtons] = useState(0);
+
   const [credencial, setCredencial] = useState(false);
 
   return (
