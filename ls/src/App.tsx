@@ -3,7 +3,8 @@ import ConfirmGoOut from "./Modals/ConfirmGoOut";
 import LateralMenu from "./components/LateralMenu";
 import Register from "./components/Register";
 import Form from "./components/Form"  ;
-import Lista from "./components/Lista";
+import ModalButtonsDynamic from "./Modals/ModalButtonsDynamic";
+
 
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
   //Para habilitar o menu lateral tire os comentarios da const abaixo,
   //dos componentes LateralMenu e ConfirmGoOut
   //const [open, setOpen] = useState(false);
+
+  const [typeButtons, setTypeButtons] = useState(0);
 
   return (
    <>
@@ -37,6 +40,8 @@ function App() {
       //List
       //<Lista/>
     }
+        
+      <ModalButtonsDynamic typeButtons={typeButtons}/>
 
     {
       //Colaborador: Mateus Augusto da Silva
