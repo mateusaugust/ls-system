@@ -4,11 +4,13 @@ import { Box,  Grid, TextField, Button, Typography } from '@mui/material';
 
 type TlateralMenu = {
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  setSelection: React.Dispatch<React.SetStateAction<number>>;
+  section: number;
 }
 
-const LateralMenu = ({setOpen}:TlateralMenu) => {
+const LateralMenu = ({section, setSelection, setOpen}:TlateralMenu) => {
   const options = ["Todos Chamados", "Abrir Chamados"];
-  const [section, setSelection] = useState(0);
+  
 
   const handleClickMenu = (index : number) =>{
     setSelection(index);
