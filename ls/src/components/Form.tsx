@@ -10,7 +10,6 @@ const Form = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        height: '100vh',
       }}
     >
       <Box
@@ -27,11 +26,11 @@ const Form = () => {
         }}
       >
         <Grid container spacing={4}>
-          <Grid item xs={12} md={6} sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+          <Grid item xs={6}sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
             <TextField id="outlined-password-input" label="Numeração" type="text" />
           </Grid>
 
-          <Grid item xs={12} md={6} sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+          <Grid item xs={6}sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
             <TextField id="outlined-password-input" label="Usuario" type="text" sx={{ width: '80%' }} />
           </Grid>
 

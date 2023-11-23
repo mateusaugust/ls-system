@@ -1,8 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Box, Modal, Grid, TextField, Button } from '@mui/material';
 
-const Register = () => {
-  
+type TRegister ={
+  setCredencial: React.Dispatch<React.SetStateAction<boolean>>;
+  credencial: boolean;
+}
+
+const Register = ({credencial, setCredencial}:TRegister) => {
+  const users = [{nome:"Mateus", senha:"123"}, {nome:"Thiago", senha:"123"}];
+
+  const [user,setUser] = useState("");
+  const [password,setPassword] = useState("");
+
+  const handleClinckEnter = () => {
+
+    let status = false;
+
+    users.map((userPosition)=>{
+      if(userPosition.nome === user && userPosition.senha === password){ 
+        setCredencial(true);
+        status = true;
+      }
+    });
+
+    if(status === false){
+      alert("Usuario ou senha estão errados");
+    }
+  }
 
   return (
     <Box sx={{ height:"100vh", }}>
@@ -56,6 +80,7 @@ const Register = () => {
                   id="outlined-password-input"
                   label="Usuário"
                   type="text"
+                  onChange={(e) => setUser(e.target.value)}
                 />
               </Grid>
 
@@ -66,12 +91,13 @@ const Register = () => {
                   label="Senha"
                   type="password"
                   autoComplete="current-password"
+                  onChange={(e)=> setPassword(e.target.value)}
                 />
               </Grid>
 
               <Grid item xs={12} sx={{display:"flex", justifyContent:"space-between", alignItems:"center"}}>
                 <a href='https://discord.gg/Kh4SaN4Bsx' target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: '#1E3B6F' }}>Precisa de ajuda?</a>
-                <Button sx={{color:"#1E3B6F"}}>Entrar</Button>
+                <Button onClick={handleClinckEnter}sx={{color:"#1E3B6F"}}>Entrar</Button>
               </Grid>
             </Grid>
          </Box>
