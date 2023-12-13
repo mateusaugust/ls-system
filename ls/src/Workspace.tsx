@@ -4,6 +4,7 @@ import ConfirmGoOut from './Modals/ConfirmGoOut';
 import LateralMenu from './components/LateralMenu';
 import ModalButtonsDynamic from './Modals/ModalButtonsDynamic';
 import Form from './components/Form';
+import ListAlter from './components/ListAlter';
 
 const Workspace = () => {
 
@@ -15,9 +16,11 @@ const Workspace = () => {
       <LateralMenu setOpen={setOpen} setSelection={setSelection} section={section}/>
 
       <Box sx={{width:"100%", padding:"10px", display:"flex", flexDirection:"column", justifyContent:"space-between"}}>
-        {section === 0 && "Teste"}
+        {section === 0 && <ListAlter/>}
 
         {section === 1 && <Form/>}
+
+        {section == 2 && "teste1"}
 
         <ModalButtonsDynamic typeButtons={section}/>
       </Box>

@@ -9,7 +9,7 @@ type TlateralMenu = {
 }
 
 const LateralMenu = ({section, setSelection, setOpen}:TlateralMenu) => {
-  const options = ["Todos Chamados", "Abrir Chamados"];
+  const options = ["Todos Chamados", "Abrir Chamados","IA do Campo"];
   
 
   const handleClickMenu = (index : number) =>{
