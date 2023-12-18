@@ -5,6 +5,7 @@ import LateralMenu from './components/LateralMenu';
 import ModalButtonsDynamic from './Modals/ModalButtonsDynamic';
 import Form from './components/Form';
 import ListAlter from './components/ListAlter';
+import ChatAI from './components/ChatAI';
 
 const Workspace = () => {
 
@@ -20,7 +21,7 @@ const Workspace = () => {
 
         {section === 1 && <Form/>}
 
-        {section == 2 && "teste1"}
+        {section == 2 && <ChatAI/>}
 
         <ModalButtonsDynamic typeButtons={section}/>
       </Box>
